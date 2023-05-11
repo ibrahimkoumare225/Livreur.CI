@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "872303997169",
+    "project_id": "livraison-ci",
+    "storage_bucket": "livraison-ci.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872303997169:android:07ce9ed5420a3731a93950",
+        "android_client_info": {
+          "package_name": "com.koumare.livraisonci"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872303997169-m8qbip6cu24d6imnqt584rhsnoggkumo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAGKVXZP5D6SKWi2ZsqbgjazJ7MiMflDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872303997169-m8qbip6cu24d6imnqt584rhsnoggkumo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
