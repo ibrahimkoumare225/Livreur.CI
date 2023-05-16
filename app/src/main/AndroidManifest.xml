@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Livraisonci">
         <activity
+            android:name=".PrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConnexionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InscriptionActivity"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeMainActivity"
             android:exported="false" />
         <activity
