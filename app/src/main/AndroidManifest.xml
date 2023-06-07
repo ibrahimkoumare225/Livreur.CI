@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Livraisonci">
         <activity
+            android:name=".RechercheActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".PrincipalActivity"
             android:exported="false" />
         <activity

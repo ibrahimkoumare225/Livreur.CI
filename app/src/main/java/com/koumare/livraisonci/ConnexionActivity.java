@@ -35,14 +35,13 @@ public class ConnexionActivity extends AppCompatActivity {
         progressBar2 = findViewById(R.id.progressBar2);
         mAuth = FirebaseAuth.getInstance();
     }
-
-   public void txtSingInForgotPasswordClicked(View v){
-       Intent intent = new Intent(this,ForgotPasswordMainActivity.class);
-       startActivity(intent);
-   }
     public void txtSingInRegisterClicked(View v) {
         // Implement the functionality for the register action
         Intent intent = new Intent(this,InscriptionActivity.class);
+        startActivity(intent);
+    }
+    public void txtSingInForgotPasswordClicked(View v) {
+        Intent intent = new Intent(ConnexionActivity.this, ForgotPasswordMainActivity.class);
         startActivity(intent);
     }
 
@@ -72,9 +71,17 @@ public class ConnexionActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(ConnexionActivity.this, "Connexion échouée", Toast.LENGTH_SHORT).show();
                 }
+
             }
+
         });
+
+        Intent aff = new Intent(ConnexionActivity.this,PrincipalActivity.class);
+        startActivity(aff);
+
+
     }
+
 }
 
 

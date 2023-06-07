@@ -3,6 +3,7 @@ package com.koumare.livraisonci;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -74,6 +75,8 @@ public class InscriptionActivity extends AppCompatActivity {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(InscriptionActivity.this, "Utilisateur bien enregistrer", Toast.LENGTH_SHORT).show();
                                         progressBar.setVisibility(View.GONE);
+                                        Intent intent = new Intent(InscriptionActivity.this, ConnexionActivity.class);
+                                        startActivity(intent);
                                     } else {
                                         Toast.makeText(InscriptionActivity.this, "Utilisateur non enregistrer", Toast.LENGTH_SHORT).show();
                                         progressBar.setVisibility(View.GONE);
@@ -87,6 +90,13 @@ public class InscriptionActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
+    public void onButtonConnexionClicked(View v){
+        Intent intent = new Intent(InscriptionActivity.this, ConnexionActivity.class);
+        startActivity(intent);
+    }
+
 
 }
